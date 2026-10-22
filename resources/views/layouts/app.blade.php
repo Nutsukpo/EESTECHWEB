@@ -590,6 +590,13 @@
                         Contact Enquiries
                     </a>
                 </nav>
+
+                <nav class="ees-nav">
+                    <a href="{{ route('admin.analytics.index') }}" class="ees-nav-link">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Analytics
+                    </a>
+                </nav>
             @endcan
 
 

@@ -21,6 +21,7 @@ use App\Http\Controllers\ContactEnquiryController;
 use App\Http\Controllers\Admin\ContactEnquiry1Controller;
 use App\Http\Controllers\Admin\SaleProductController;
 use App\Http\Controllers\PublicSalesController;
+use App\Http\Controllers\Admin\WebsiteAnalyticsController;
 
 
 /*
@@ -85,6 +86,11 @@ Route::prefix('admin')
         ])->name('admin.website.settings.update');
 
     });
+
+    Route::get('/analytics', [
+        WebsiteAnalyticsController::class,
+        'index',
+    ])->name('admin.analytics.index');
 
 
 /*
